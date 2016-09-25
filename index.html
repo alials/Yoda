@@ -1,8 +1,16 @@
 ---
 layout: default
 ---
+<h1> Yoda</h1>
+<p> Yoda is the best cat in the world </p>
 
-        <h1> Yoda</h1>
-        <p> Yoda is the best cat in the world </p>
+<h2> This site is about Yoda the best cat in the world </h2>
 
-   
+<ul>
+        {% for news in site.categories.recently-discovered limit:2 %}
+        <li>
+                <a href="">{{news.title}}</a>
+                <p>{{news.meta}}</p>
+        </li>
+        {% endfor %}
+</ul>
