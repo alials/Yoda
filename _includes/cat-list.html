@@ -1,0 +1,9 @@
+<ul>
+    {% for Cats in site.pages %}
+    {% if Cats.type == include.type %}
+    <li>
+{{Cats.title}}
+    </li>
+{% endif %}
+    {% endfor %}
+</ul>
