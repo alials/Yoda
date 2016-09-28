@@ -2,7 +2,12 @@
     {% for Cats in site.pages %}
     {% if Cats.type == include.type %}
     <li>
-{{Cats.title}}
+
+<a href="{{site.baseurl}}{{Cats.url}}">
+<img src="{{site.baseurl}}/img/{{Cats.image}}" alt"Photo of {{Cats.title}}">
+<h3>{{Cats.title}}</h3>
+<p>{{Cats.meta}}</p>
+</a>
     </li>
 {% endif %}
     {% endfor %}
