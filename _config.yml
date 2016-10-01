@@ -1,2 +1,3 @@
 baseurl: /Yoda/
 exclude: ['README.md']
+permalink: pretty

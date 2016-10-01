@@ -4,12 +4,12 @@ layout: default
 <h1> Yoda</h1>
 <p> Yoda is the best cat in the world </p>
 
-<h2> Types of Yoda</h2>
+<h2> Yoda's friends</h2>
 
 <ol>
 {% for planet in site.data.yoda-types %}
         <li>
-<a href="#">{{planet.title}}</a>
+<a href="{{site.baseurl}}/Cats/{{yoda-types.folder}}/">{{planet.title}}</a>
 {{planet.content | markdownify }}
 </li>
 

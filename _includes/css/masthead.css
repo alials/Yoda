@@ -1,0 +1,10 @@
+.masthead {
+    padding: 15em 1em 15em 1em;
+    color: #fff;
+    background: #000531 url("../img/yoda.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.masthead-Cats{
+    background-image: url("../img/starwars.jpg")
+}

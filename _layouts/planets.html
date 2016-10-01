@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<strong>Planets</strong>
+
+<nav>
+<ul>
+{% for planet in site.data.yoda-types %}
+        <li>
+<a href="{{site.baseurl}}/Cats/{{yoda-types.folder}}/" class="{% if page.url contains Cats.folder %}current{% endif %}">{{planet.title}}</a>
+
+</li>
+
+
+{% endfor %}
+</ul>
+</nav>
+
+
+{{content}}
